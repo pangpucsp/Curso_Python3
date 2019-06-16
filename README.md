@@ -17,6 +17,7 @@ Este curso é fortemente baseado no tutorial online oferecido pela [W3Schools](h
 ## Alguns fatos sobre o Python
 
 - Python foi criado Guido van Rossum e disponibilizado em 1991.
+- Python é multiplataforma, existe para MS Windows, MacOS, Linux e outros.
 - Python é usado para:
   + desenvolvimento WEB no lado do servidor;
   + desenvolvimento de software;
@@ -43,13 +44,20 @@ Duas possibilidades devem ser consideradas, a instalaçao oficial a partir do si
 python --version
 ```
 
-Isto mostra que o Python está corretamente instalado no seu sistema e que ele é acessível pela interface da linha de comando. Para completar, use um editor de texto (notepad no caso do MS Windows, gedit ou nano no Linux) e crie um arquivo: alomundo.py com o seguinte conteúdo:
+Isto mostra que o Python está corretamente instalado no seu sistema e que ele é acessível pela interface da linha de comando. Nos sistemas onde as duas versões de Python estão instaladas, no lugar de python, use python3 nos comandos. Para completar o teste da instalação, use um editor de texto (notepad no caso do MS Windows, gedit ou nano no Linux) e crie um arquivo: alomundo.py com o seguinte conteúdo:
 
 ```
 print("Alo, Mundo!")
 ```
 
-Salve com o cuidado de que a extensão é .py. O MS Windows tem o mal hábito de acrescentar uma extensão .txt, o nome real do arquivo fica: *alomundo.py.txt* se o arquivo for salvo como arquivo de texto no notepad, para evitar isto selecione *Todos tipos* na janela para Salvar o arquivo. O comando *dir* revela o nome e a extensão correta dos arquivos, o *explorer* (navedor de pastas do MS Windows) não mostra extensões conhecidas e, em geral, não mostra o .txt. Tendo o arquivo, ele pode ser executado na linha de comando com:
+  Não use processadores de texto como o MS Word para editar o arquivo,
+  processadores de texto não criam arquivos de texto puro, eles adicionam
+  ao texto escrito comandos de formatação que vão confundir o
+  interpretador Python. Além do notebook Jupyter que iremos usar no curso,
+  os programas Python podem ser escritos com editores de texto como o notepad++,
+  emacs, vi, gedit, atom, brackets ou editores de ambientes de programação.
+
+Salve tomando o cuidado de que a extensão é .py. O MS Windows tem o mal hábito de acrescentar uma extensão .txt, o nome real do arquivo fica: *alomundo.py.txt* se o arquivo for salvo como arquivo de texto no notepad, para evitar isto selecione *Todos tipos* na janela para Salvar o arquivo. O comando *dir* revela o nome e a extensão correta dos arquivos, o *explorer* (navedor de pastas do MS Windows) não mostra extensões conhecidas e, em geral, não mostra o .txt. Tendo o arquivo, ele pode ser executado na linha de comando com:
 
 ```
 python alomundo.py
@@ -57,7 +65,49 @@ python alomundo.py
 
 E deve imprimir uma linha com o texto: **Alo, Mundo!**
 
+### Instalação de pacotes
 
+#### Sem anaconda
+
+O processo normal de instalação de pacotes no Python é usando o comando pip na linha de comando \(em alguns casos, o pip podem não ter sido compilado para o seu sistema e nesse caso você terá de usar *python pip-script*.\).
+
+Para saber quais pacotes estão instalados no seu sistema, faça:
+
+```
+pip list
+```
+
+Se os pacotes jupyter, ipython e/ou notebook não estiverem instalados, você pode instalá-los com:
+
+```
+pip install jupyter ipython notebook
+```
+
+No lugar de *install* é possível usar *update* para atualizar estes pacotes se necessário.
+
+#### Com Anaconda (ou miniconda)
+
+Na distribuição Anaconda do Python, o programa *conda* gerencia os pacotes e os ambientes isolados de programação. Para instalar ou atualizar os pacotes simplesmente use o conda no lugar de *pip*.
+
+Exemplo
+
+```
+conda install jupyter ipython notebook
+```
+
+Isto não deve ser necessário se você instalou o Anaconda, mas pode ser necessário se você tiver criado um ambiente mínimo ou instalado o miniconda.
+
+## Arquivos .ipynb
+
+Os arquivos notebook de Python têm extensão .ipynb. É neles que estão as lições deste curso.
+
+Os arquivos de notebbok do Python são compostos por células. Estas células podem ter texto em formato Markdown, como neste arquivo README.md ou código Python. Para usar estes arquivos, execute o programa notebook-jupyter que deve ter sido instalado com o Anaconda. Ele vai iniciar um servidor com o interpretador e conectar o seu navegador preferido ao servidor.
+![Jupyter Notebook](note_tree.png)
+
+Para começar um interpretador (kernel) para executar os códigos de um arquivo notebook, como o licao1.ipynb da figura, basta clicar no arquivo.
+![Jupyter Notebook licao1.ipynb](note_licao1.png)
+
+Aí, você pode executar cada célula  de código ou executar todas as células de uma vez.
 
 ### Referências
 
