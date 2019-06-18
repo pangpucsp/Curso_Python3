@@ -105,9 +105,13 @@ Os arquivos de notebbok do Python são compostos por células. Estas células po
 ![Jupyter Notebook](note_tree.png)
 
 Para começar um interpretador (kernel) para executar os códigos de um arquivo notebook, como o licao1.ipynb da figura, basta clicar no arquivo.
-![Jupyter Notebook licao1.ipynb](note_licao1.png)
+![Jupyter Notebook licao1.ipynb](licao1.png)
 
 Aí, você pode executar cada célula  de código ou executar todas as células de uma vez.
+
+1. [Lição 1](licao1.ipynb): Introdução ao sistema, jupyter-notebook e ao Python3.
+
+2. [Lição 2](licao2.ipynb): Strings no Python.
 
 ### Referências
 
