@@ -19,7 +19,9 @@ As linguagens podem diferenciar entre maiúsculas e minúsculas, ou não
 ## Identificadores no Python 3
 
 O Python é sensível à caixa, os caracteres válidos são letras, dígitos e \_.
-O identificador não pode começar com um dígito.
+O identificador não pode começar com um dígito. Uma norma do *PEP-8* estabelece
+que uma linha de código não deve ter mais do que 79 caracteres, em consequência,
+o identificador deve ter menos de 79 caracteres.
 
 ### Palavras-Chaves do Python 3
 
@@ -33,7 +35,10 @@ variáveis, módulos, funções, ...
 Além das regras restritivas de quais caracteres e nomes podem ser usados,
 existem convenções que dizem como os nomes são escolhidos, escritos, etc.
 É comum se recomendar a não começar as variáveis dos programadores de
-aplicações com \_\_, pois muitas vezes, nome começando com são do sistema.
+aplicações com \_\_, pois muitas vezes, é assim que começam nomes do sistema.
+Para nomes privados, comece o nome com \_. Esta convenção permite identificar
+facilmente nomes cuja insteção é de serem privados. Não comece e termine
+um identificador com \_, tipos internos do Python usam nomes desta forma.
 
 ### Notação Camelo
 
