@@ -36,28 +36,29 @@ Este curso é fortemente baseado no tutorial online oferecido pela [W3Schools](h
 
 O Python vem pré-instalado em sistemas como o MacOS e linux. Mas, frequentemente, a versão instalada não é a que usaremos. Por exemplo, no MacOS, a versão pré-instalada é a 2. Além disso, frequentemente, estas versões pré-instaladas não são as mais atualizadas e podem apresentar problemas de segurança. Assim, é importante instalar a última versão.
 
-Duas possibilidades devem ser consideradas, a instalaçao oficial a partir do site [Oficial do Python](https://www.python.org/downloads/), ou a [Distribuição Anaconda](https://www.anaconda.com/distribution/). Esta segunda é a que preferimos por já incluir a maioria dos pacotes que podemos desejar para trabalhar com o Python na análise de dados. Seu inconveniente é que muitos dos pacotes incluídos podem não ser necessários. Além disso, ele oferece uma maneira não padrão de gerenciar a instalação dos pacotes e de gerenciar os ambientes de desenvolvimento de Python.
+Duas possibilidades devem ser consideradas, a instalaçao oficial a partir do site [Oficial do Python](https://www.python.org/downloads/), ou a [Distribuição Anaconda](https://www.anaconda.com/distribution/). Esta segunda é a que preferimos por já incluir a maioria dos pacotes que podemos desejar para trabalhar com o Python na análise de dados. Seu inconveniente é que muitos dos pacotes incluídos podem não ser necessários. Além disso, ele oferece uma maneira não padrão de gerenciar a instalação dos pacotes e de gerenciar os ambientes virtuais de desenvolvimento de Python.
 
-É importante saber usar a interface da linha de comando, vulgo *Prompt do DOS* no MS Windows ou *terminal* no Linux ou MacOS. Para saber a versão do Python, na linha de comando, faça:
+É importante saber usar a interface da linha de comando \(cli\), vulgo *Prompt do DOS* no MS Windows ou *terminal* no Linux ou MacOS. Para saber a versão do Python, na linha de comando, faça:
 
 ```
 python --version
 ```
 
-Isto mostra que o Python está corretamente instalado no seu sistema e que ele é acessível pela interface da linha de comando. Nos sistemas onde as duas versões de Python estão instaladas, no lugar de python, use python3 nos comandos. Para completar o teste da instalação, use um editor de texto (notepad no caso do MS Windows, gedit ou nano no Linux) e crie um arquivo: alomundo.py com o seguinte conteúdo:
+Isto mostra que o Python está corretamente instalado no seu sistema e que ele é acessível pela interface de linha de comando. Nos sistemas onde as duas versões de Python estão instaladas, no lugar de python, talvez você precise usar *python3* nos comandos. Para completar o teste da instalação, use um editor de texto (notepad, ou de preferência, *notepad++* no caso do MS Windows, gedit ou nano no Linux) e crie um arquivo: alomundo.py com o seguinte conteúdo:
 
 ```
 print("Alo, Mundo!")
 ```
 
-  Não use processadores de texto como o MS Word para editar o arquivo,
+  Não use processadores de texto, como o MS Word, para editar o arquivo,
   processadores de texto não criam arquivos de texto puro, eles adicionam
   ao texto escrito comandos de formatação que vão confundir o
-  interpretador Python. Além do notebook Jupyter que iremos usar no curso,
+  interpretador Python. Além do Jupyter notebook que iremos usar no curso,
   os programas Python podem ser escritos com editores de texto como o notepad++,
-  emacs, vi, gedit, atom, brackets ou editores de ambientes de programação.
+  emacs, vi, gedit, atom, brackets ou editores de ambientes de programação, como
+  o PyCharm.
 
-Salve tomando o cuidado de que a extensão é .py. O MS Windows tem o mal hábito de acrescentar uma extensão .txt, o nome real do arquivo fica: *alomundo.py.txt* se o arquivo for salvo como arquivo de texto no notepad, para evitar isto selecione *Todos tipos* na janela para Salvar o arquivo. O comando *dir* revela o nome e a extensão correta dos arquivos, o *explorer* (navedor de pastas do MS Windows) não mostra extensões conhecidas e, em geral, não mostra o .txt. Tendo o arquivo, ele pode ser executado na linha de comando com:
+Salve tomando o cuidado de que a extensão é .py. Em particular, tome cuidado com MS Windows, que tem o mal hábito de acrescentar uma extensão .txt, o nome real do arquivo fica: *alomundo.py.txt* se o arquivo for salvo como arquivo de texto no notepad, para evitar isto selecione *Todos tipos* na ficha para Salvar o arquivo. O comando *dir* revela o nome e a extensão verdadeira dos arquivos, o *explorer* (navedor de pastas do MS Windows) não mostra extensões conhecidas e, em geral, não mostra o .txt. O arquivo pode ser executado na linha de comando com:
 
 ```
 python alomundo.py
@@ -87,7 +88,7 @@ No lugar de *install* é possível usar *update* para atualizar estes pacotes se
 
 #### Com Anaconda (ou miniconda)
 
-Na distribuição Anaconda do Python, o programa *conda* gerencia os pacotes e os ambientes isolados de programação. Para instalar ou atualizar os pacotes simplesmente use o conda no lugar de *pip*.
+Na distribuição Anaconda do Python, o programa *conda* gerencia os pacotes e os ambientes isolados de programação. Para instalar ou atualizar os pacotes simplesmente use *conda* no lugar de *pip*.
 
 Exemplo
 
