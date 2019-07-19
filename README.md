@@ -112,7 +112,9 @@ Aí, você pode executar cada célula  de código ou executar todas as células 
 
 1. [Lição 1](licao1.ipynb): Introdução ao sistema, ao jupyter-notebook e às variáveis em Python3.
 
-2. [Lição 2](licao2.ipynb): Strings no Python.
+2. [Lição 2](licao2.ipynb): Tipos de dados e operadores no Python.
+
+3. [Lição 3](licao3.ipynb): Controle de fluxo de instruções.
 
 ### Referências
 
