@@ -116,7 +116,7 @@ conda list
 
 Os arquivos notebook de Python têm extensão .ipynb. É neles que estão as lições deste curso.
 
-Os arquivos de notebook do Python são compostos por células. Estas células podem ter texto em formato *Markdown*, como neste arquivo README.md ou código Python. Para usar estes arquivos, execute o programa *notebook-jupyter* que deve ter sido instalado com o Anaconda. Ele vai iniciar um servidor com o interpretador e conectar o seu navegador preferido ao servidor.
+Os arquivos de notebook do Python são compostos por células. Estas células podem ter texto em formato *Markdown*, como neste arquivo README.md ou código Python. Para usar estes arquivos, execute o programa *jupyter-notebook* que deve ter sido instalado com o Anaconda. Ele vai iniciar um servidor com o interpretador e conectar o seu navegador preferido ao servidor.
 ![Jupyter Notebook](note_tree.png)
 
 Para começar um interpretador \(*kernel*\) para executar os códigos de um arquivo notebook, como o *licao1.ipynb* da figura, basta clicar no *link* do arquivo na página do *notebook*.
